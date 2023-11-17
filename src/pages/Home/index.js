@@ -11,7 +11,19 @@ import {
  }
  from '../../assets'
 import { Card, Gap } from '../../components'
-import { TabView, SceneMap } from 'react-native-tab-view'
+import { TabView, SceneMap, TabBar } from 'react-native-tab-view'
+
+const renderTabBar = props => (
+  <TabBar
+    {...props}
+    indicatorStyle={{ backgroundColor: '#020202', width: '0.20%', height: 3 }}
+    style={{ backgroundColor: 'white' }}
+    tabStyle = {{width: 'auto'}}
+    renderLabel={({ route, focused, color }) => (
+      <Text style={{ color: focused ? '#020202' : '#8D92A3', margin: 8 }}>{route.title}</Text>
+    )}
+  />
+);
 
 const FirstRoute = () => (
   <View style={{ backgroundColor: '#ff4081', flex: 1 }} />
@@ -60,7 +72,8 @@ const Home = () => {
         </ScrollView>
       </View>
       <View style={styles.tabContainer}>
-        <TabView
+      <TabView
+        renderTabBar={renderTabBar}
         navigationState={{ index, routes }}
         renderScene={renderScene}
         onIndexChange={setIndex}
@@ -76,7 +89,6 @@ export default Home
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: 'yellow',
   },
   profileContainer: {
     flexDirection: 'row',
