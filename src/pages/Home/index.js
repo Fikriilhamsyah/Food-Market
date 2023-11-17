@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
-import { ProfileDummy } from '../../assets'
+import { FoodDummy1, FoodDummy2, FoodDummy3, FoodDummy4, FoodDummy5, FoodDummy6, ProfileDummy } from '../../assets'
+import { Card, Gap } from '../../components'
 
 const Home = () => {
   return (
@@ -12,6 +13,18 @@ const Home = () => {
         </View>
         <Image source={ProfileDummy} styles={styles.profile} />
       </View>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <View style={styles.card}>
+          <Gap width={24} />
+          <Card image={FoodDummy1} />
+          <Card image={FoodDummy2} />
+          <Card image={FoodDummy3} />
+          <Card image={FoodDummy4} />
+          <Card image={FoodDummy5} />
+          <Card image={FoodDummy6} />
+          {/* <Gap width={24} /> */}
+        </View>
+      </ScrollView>
     </View>
   )
 }
@@ -39,5 +52,9 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 8,
+  },
+  card: {
+    flexDirection: 'row',
+    marginVertical: 12,
   }
 })
