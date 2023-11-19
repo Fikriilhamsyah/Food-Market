@@ -10,6 +10,7 @@ import ICStartOn from './ic-star-on.svg';
 import ICStartOff from './ic-star-off.svg';
 import ICButtonPlus from './ic-button-plus.svg';
 import ICButtonMin from './ic-button-min.svg';
+import ICNext from './ic-next.svg';
 
 export {
     IcBack,
@@ -24,4 +25,5 @@ export {
     ICStartOff,
     ICButtonPlus,
     ICButtonMin,
+    ICNext,
 };
