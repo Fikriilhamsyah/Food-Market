@@ -8,7 +8,9 @@ import {
     SuccessSignUp,
     SignUpAddress,
     SignUp, SignIn,
-    SplashScreen
+    SplashScreen,
+    FoodDetail,
+    OrderSummary,
 } from '../pages';
 import { BottomNavigator } from '../components';
 
@@ -34,6 +36,8 @@ const Router = () => {
             <Stack.Screen name="SignUpAddress" component={SignUpAddress} options={{headerShown: false}} />
             <Stack.Screen name="SuccessSignUp" component={SuccessSignUp} options={{headerShown: false}} />
             <Stack.Screen name="MainApp" component={MainApp} options={{headerShown: false}} />
+            <Stack.Screen name="FoodDetail" component={FoodDetail} options={{headerShown: false}} />
+            <Stack.Screen name="OrderSummary" component={OrderSummary} options={{headerShown: false}} />
         </Stack.Navigator>
     );
 };

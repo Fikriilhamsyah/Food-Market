@@ -12,7 +12,7 @@ const Rating = () => {
             <ICStartOn />
             <ICStartOff />
         </View>
-        <Text>4.5</Text>
+        <Text style={styles.rating}>4.5</Text>
     </View>
   )
 }
@@ -25,5 +25,9 @@ const styles = StyleSheet.create({
     },
     startContainer: {
         flexDirection: 'row',
+    },
+    rating: {
+        color: '#8D92A3',
+        marginLeft: 4
     }
 })
