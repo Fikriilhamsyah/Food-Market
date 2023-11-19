@@ -3,7 +3,7 @@ import React from 'react'
 import { Button, Gap, Header, ItemListFood, ItemValue } from '../../components'
 import { FoodDummy1 } from '../../assets'
 
-const OrderSummary = ({navigation}) => {
+const OrderDetail = () => {
   return (
     <ScrollView>
       <Header title="Payment" subTitle="You deserve better meal" onBack={() => {}} />
@@ -24,15 +24,19 @@ const OrderSummary = ({navigation}) => {
         <ItemValue label="House No." value="A5 Hook" />
         <ItemValue label="City" value="Bandung" />
       </View>
+      <View style={styles.content}>
+        <Text style={styles.label}>Order Status:</Text>
+        <ItemValue valueColor='#1ABC9C' label="#FM209391" value="Paid" />
+      </View>
       <View style={styles.button}>
-            <Button text="Checkout Now" onPress={() => navigation.replace('SuccessOrder')} />
+            <Button text="Cancel My Order" onPress={() => navigation.replace('SuccessOrder')} color='#D9435E' textColor='white' />
       </View>
       <Gap height={20} />
     </ScrollView>
   )
 }
 
-export default OrderSummary
+export default OrderDetail
 
 const styles = StyleSheet.create({
     content: {

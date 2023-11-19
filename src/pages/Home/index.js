@@ -42,7 +42,6 @@ export default Home
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    maxHeight: screenHeight
   },
   card: {
     flexDirection: 'row',

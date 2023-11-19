@@ -35,12 +35,12 @@ const renderTabBar = props => (
     const navigation = useNavigation();
     return (
         <View style={{paddingTop: 8, paddingHorizontal: 24}}>
-          <ItemListFood rating={3} image={FoodDummy1} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
-          <ItemListFood rating={3} image={FoodDummy3} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
-          <ItemListFood rating={3} image={FoodDummy2} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
-          <ItemListFood rating={3} image={FoodDummy4} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
-          <ItemListFood rating={3} image={FoodDummy6} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
-          <ItemListFood rating={3} image={FoodDummy5} onPress={() => navigation.navigate('FoodDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
+          <ItemListFood rating={3} image={FoodDummy1} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
+          <ItemListFood rating={3} image={FoodDummy3} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
+          <ItemListFood rating={3} image={FoodDummy2} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
+          <ItemListFood rating={3} image={FoodDummy4} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
+          <ItemListFood rating={3} image={FoodDummy6} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" status="Cancel" />
+          <ItemListFood rating={3} image={FoodDummy5} onPress={() => navigation.navigate('OrderDetail')} type="past-orders" name="Sop Bumil" items={3} price="2.000.000" date="Jun 12, 14:00" />
         </View>
       )
     };

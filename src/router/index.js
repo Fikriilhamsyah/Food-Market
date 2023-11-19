@@ -12,6 +12,7 @@ import {
     SplashScreen,
     FoodDetail,
     OrderSummary,
+    OrderDetail,
 } from '../pages';
 import { BottomNavigator } from '../components';
 
@@ -40,6 +41,7 @@ const Router = () => {
             <Stack.Screen name="FoodDetail" component={FoodDetail} options={{headerShown: false}} />
             <Stack.Screen name="OrderSummary" component={OrderSummary} options={{headerShown: false}} />
             <Stack.Screen name="SuccessOrder" component={SuccessOrder} options={{headerShown: false}} />
+            <Stack.Screen name="OrderDetail" component={OrderDetail} options={{headerShown: false}} />
         </Stack.Navigator>
     );
 };
