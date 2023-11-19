@@ -3,7 +3,7 @@ import React from 'react'
 import { IlSuccessOrder } from '../../assets'
 import { Button, Gap } from '../../components'
 
-const SuccessOrder = () => {
+const SuccessOrder = ({navigation}) => {
   return (
     <View style={styles.page}>
         <IlSuccessOrder />
@@ -18,7 +18,7 @@ const SuccessOrder = () => {
         </View>
         <Gap height={12} />
         <View style={styles.buttonContainer}>
-            <Button text="View My Order" color='#8D92A3' textColor='white' onPress={() => navigation.replace('MainApp')} />
+            <Button text="View My Order" color='#8D92A3' textColor='white' onPress={() => navigation.replace('MainApp', {screen: 'Order'})} />
         </View>
     </View>
   )

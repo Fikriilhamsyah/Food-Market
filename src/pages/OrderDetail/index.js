@@ -29,7 +29,7 @@ const OrderDetail = () => {
         <ItemValue valueColor='#1ABC9C' label="#FM209391" value="Paid" />
       </View>
       <View style={styles.button}>
-            <Button text="Cancel My Order" onPress={() => navigation.replace('SuccessOrder')} color='#D9435E' textColor='white' />
+            <Button text="Cancel My Order" color='#D9435E' textColor='white' />
       </View>
       <Gap height={20} />
     </ScrollView>
